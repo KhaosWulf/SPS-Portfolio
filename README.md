@@ -1,1 +1,1 @@
-"This repository contains Alistair's portfolio and SPS projects."
+"This repository must contain Alistair's portfolio and SPS projects."
