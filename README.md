@@ -1,1 +1,2 @@
-"This repository should contain Alistair's portfolio and SPS projects."
+"This repo should only contain Alistair's portfolio and SPS projects."
+.............................
