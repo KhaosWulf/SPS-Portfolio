@@ -13,16 +13,18 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random fact about me to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomFact() {
+  const facts =
+      ['I have over 50+ videogames.', 'I would like to move to another country.', 'I want to learn how to speak Korean.', 'I would LOVE to own a Tibetan Mastiff. They are basically pokemon.','I have 7 siblings.', 'Sushi is my favorite food.', 'I enjoy watching anime.', 'Steven Universe and the Netflix She Ra had my emotions everywhere.','Cried HARD after watching Coco.',
+       'I could watch The Prince of Egypt over and over again.', 'I prefer live-action plays/musicals over movies in general.', 'Want to desperately see Wicked in person.', 'Would like to own an island since that is just PEAK seclusion.', 'Cannot watch Tinkerbell and the Legend of the Neverbeast without bawling my eyes out.', 'Wonder how many unique facts you have seen so far. :)'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random fact.
+  const fact = facts[Math.floor(Math.random() * facts.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const factContainer = document.getElementById('fact-container');
+  factContainer.innerText = fact;
 }
+
