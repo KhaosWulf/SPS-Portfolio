@@ -17,7 +17,7 @@
  */
 function addRandomFact() {
   const facts =
-      ['I have over 50+ videogames.', 'I would like to move to another country.', 'I want to learn how to speak Korean.', 'I would LOVE to own a Tibetan Mastiff. They are basically pokemon.','I have 7 siblings.', 'Sushi is my favorite food.', 'I enjoy watching anime.', 'Steven Universe and the Netflix She Ra had my emotions everywhere.','Cried HARD after watching Coco.',
+      ['Favorite animal is the wolf', 'I have over 50+ videogames.', 'I would like to move to another country.', 'I want to learn how to speak Korean.', 'I would LOVE to own a Tibetan Mastiff. They are basically pokemon.','I have 7 siblings.', 'Sushi is my favorite food.', 'I enjoy watching anime.', 'Steven Universe and the Netflix She Ra had my emotions everywhere.','Cried HARD after watching Coco.',
        'I could watch The Prince of Egypt over and over again.', 'I prefer live-action plays/musicals over movies in general.', 'Want to desperately see Wicked in person.', 'Would like to own an island since that is just PEAK seclusion.', 'Cannot watch Tinkerbell and the Legend of the Neverbeast without bawling my eyes out.', 'Wonder how many unique facts you have seen so far. :)'];
 
   // Pick a random fact.
