@@ -83,6 +83,13 @@ button li a:hover {
   background-color: red;
   color: white;
 }
+fact-container div {
+  color: red;
+  padding: 20px 100px;
+  text-decoration: none;
+  text-align: center;
+}
+
 main {
     position: absolute;
     right: 50px;
@@ -98,7 +105,12 @@ article {
   display: flex;
   flex-direction: column;
 }
-
+section ul {
+  font-size: 20px;
+}
+section li {
+  font-size: 20px;
+}
 .column {
   float: left;
   padding: 10px;
@@ -116,15 +128,4 @@ article {
   display: table;
   clear: both;
 }
-.content-main {
-  color: white;
-}
 
-
-.image-thumbnails img:hover {
-  border: thick solid black;
-}
-
-#random-image-container img {
-  margin-top: 20px;
-}
