@@ -40,7 +40,7 @@ aside {
     margin: 0;
     background-color: #002366;
     width:300px;
-    height:625px;
+    height:700px;
     padding-left:10px;
     padding-right:10px;
     color:white;
@@ -55,7 +55,8 @@ aside ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 300px;
+  height: 200px;
   background-color: #002366;
 }
 
@@ -81,8 +82,9 @@ button {
 }
 button li a:hover {
   background-color: red;
-  color: white;
+  color: red;
 }
+
 fact-container div {
   color: red;
   padding: 20px 100px;
