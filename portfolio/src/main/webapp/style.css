@@ -103,15 +103,14 @@ article {
   padding: 10px;
   background-color: #002366;
   width:920px;
-  font-size: 12px;
+  font-size: 17px;
   display: flex;
   flex-direction: column;
 }
-section ul {
-  font-size: 20px;
-}
-section li {
-  font-size: 20px;
+
+h3 {
+  font-size:50px;
+  border-bottom: 2px solid red;
 }
 .column {
   float: left;
