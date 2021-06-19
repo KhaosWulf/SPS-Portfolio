@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body{
+    text-align: center;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/38922f26-de5a-40b2-a520-a83907486651/d8mezuv-cf44dec9-1100-4bb5-adda-b890d68c62ff.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzg5MjJmMjYtZGU1YS00MGIyLWE1MjAtYTgzOTA3NDg2NjUxXC9kOG1lenV2LWNmNDRkZWM5LTExMDAtNGJiNS1hZGRhLWI4OTBkNjhjNjJmZi5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.n9AWHuxEWV614t9om1ysPQuzk7wJbWnN8nAqyjw7HY4");
+    background-repeat: no-repeat;
+    background-size: 1400px 750px;
+  font-family: 'Courier New', monospace;
+  font-weight: 100;
+}
+h1 {
+  color: #C0392B;
+  font-weight: 900px;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+ #clockdiv {
+    font-family: 'Courier New', monospace;
+    color: #C0392B;
+    display: inline-block;
+    font-weight: 300px;
+    text-align: center;
+    font-size: 30px;
+}
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #0A7DA0;
+    display: inline-block;
+}
+#clockdiv div > span {
+    padding: 10px;
+    border-radius: 3px;
+    background: #0A97C1;
+    display: inline-block;
+}
+
+</style>
+</head>
+<body>
+<iframe src = "https://vgmsite.com/soundtracks/mass-effect-3/vmxekklf/02%20%20Leaving%20Earth.mp3" allow = "autoplay" id = "audio" style = "display: none"></iframe>
+<audio id = "audio" autoplay loop>
+  <source src = "https://vgmsite.com/soundtracks/mass-effect-3/vmxekklf/02%20%20Leaving%20Earth.mp3" type = "audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<h1>THE FALL OF EARTH</h1>
+<div id="clockdiv">
+  <div>
+    <span class="days" id="day"></span>
+    <div class="smalltext">DAYS</div>
+  </div>
+  <div>
+    <span class="hours" id="hour"></span>
+    <div class="smalltext">HOURS</div>
+  </div>
+  <div>
+    <span class="minutes" id="minute"></span>
+    <div class="smalltext">MINUTES</div>
+  </div>
+  <div>
+    <span class="seconds" id="second"></span>
+    <div class="smalltext">SECONDS</div>
+  </div>
+</div>
+  
+<p id="demo"></p>
+</body>
+  
+<script>
+  
+var deadline = new Date("sept 28, 2186 15:37:25").getTime();
+  
+var x = setInterval(function() {
+  
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("day").innerHTML = days ;
+document.getElementById("hour").innerHTML = hours;
+document.getElementById("minute").innerHTML = minutes; 
+document.getElementById("second").innerHTML = seconds; 
+if (t < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "YOU EXIST BECAUSE WE ALLOW IT. YOU WILL END BECAUSE WE DEMAND IT.";
+        document.getElementById("day").innerHTML ='0';
+        document.getElementById("hour").innerHTML ='0';
+        document.getElementById("minute").innerHTML ='0' ; 
+        document.getElementById("second").innerHTML = '0'; }
+}, 1000);
+</script>

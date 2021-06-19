@@ -3,7 +3,130 @@
   margin-right: auto;
   width: 650px;
 }
-
-#greeting-container {
-  margin-top: 20px;
+body {
+  background-color: black;
 }
+
+header{
+    position: sticky;
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #002366;
+}
+
+header li {
+  float: left;
+  list-style-type:none;
+  border-right: 1px solid red;  
+}
+
+header li a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: aqua;
+  padding: 14px 16px;  
+}
+
+header li a:hover {
+  background-color: red;
+  color: white;
+}
+aside {
+    margin: 0;
+    background-color: #002366;
+    width:300px;
+    height:700px;
+    padding-left:10px;
+    padding-right:10px;
+    color:white;
+}
+img {
+    border-radius: 15px 50px;
+}
+subtext {
+    padding: 20px 100px;
+}
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 200px;
+  background-color: #002366;
+}
+
+aside li a {
+  display: block;
+  color: aqua;
+  padding: 20px 120px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change the link color on hover */
+aside li a:hover {
+  width: 100px;
+  background-color: red;
+  color: white;
+}
+
+button {
+  padding: 20px 100px;
+  text-decoration: none;
+  text-align: center;
+}
+button li a:hover {
+  background-color: red;
+  color: red;
+}
+
+fact-container div {
+  color: red;
+  padding: 20px 100px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+}
+article {
+  color: white;
+  margin: auto;
+  padding: 10px;
+  background-color: #002366;
+  width:920px;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size:50px;
+  border-bottom: 2px solid red;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+  width:200px;
+  height: 300px;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

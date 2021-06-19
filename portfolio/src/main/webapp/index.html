@@ -2,18 +2,144 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Portfolio HQ: Charity CJ Tarver</title>
+    <link rel="icon" 
+        type="image/png" 
+        href="https://media.istockphoto.com/vectors/wolf-icon-vector-id844157592?b=1&k=6&m=844157592&s=612x612&w=0&h=hQF8q7G3X6RC-qjtGolEwwZwdaeCfUfHsl3nlIhqixU="/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+    <header>
+    <nav class = "nav-header">
+        <ul class="nav-links">
+            <li><img src="/mypics/wolf icon.jpg" width="40" 
+               height="40"/></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#course">RELEVANT COURSES AND SKILLSET</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+        </ul>
+    </nav>
+    </header>
+    <aside class = "aside">
+        <section>
+            <h2 style="font-size:22px;">Charity CJ "Alistair" Tarver</h2>            
+                <img src="/mypics/alistair.png" width="300" height="300"/>
+                <p class="subtext">GaTech: Computer Scientist Undergraduate</p>
+                        <ul class = "aside-links">
+                            <li><a href="https://www.linkedin.com/in/cjtarver00/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/KhaosWulf" target="_blank">Github</a></li>
+                            <li><a href="mailto:cjtarver00@gmail.com" target="_blank">Email</a></li>
+                        </ul>
+
+                <button class="b1" onclick="addRandomFact();"> More About Me: Extended Cut</button>
+                <div id="fact-container"></div>
+                <button clas="b2" onclick="showHello();">
+                    Server Saying Hello!
+                </button>
+                <h1 id="hello-container"></h1>
+                <p>Click <a href="/hello">here</a> the server say hello to me!</p>
+                
+        </section>
+    </aside>
+    <main>
+        <article>
+            <section class = "personally">
+            <h3 id="about">About Me -</h3>                        
+            <p>
+            Hello! Nice of you to stop by!
+            </p>
+            <p>
+            I'm Alistair, and am a Junior Computer Science Major at the Georgia Institute of Technology. 
+            Definitely intense, but I enjoy it! A nice little love-hate relationship; healthy for any aspiring computer scientist, really. I've been learning and working to improve my Java, JavaScript, and HTML/CSS skills, but am also familiar with Python as well.
+            All the more motivation to work towards mastering more skills and getting out of here and into my desired purpose. For instance, I have a hefty interest in robotics, both the software and hardware side. I aspire to work on advancing prosthetics in the future, 
+            near or distant, and aid those who forcibly lost limbs/features or had congenital disorders.
+        
+            Addtionally, I want to aid in search and rescue efforts such as during natural disasters. 
+            Quite honestly, a life inspired by comics and fantasy has me wanting to see how far I could go in being like heroes purely thought ficticious. 
+            And as for how I would accomplish this? Well, put simply, learning as much as I can, and researching how to apply my ideas to real world events and lives.
+            </p>
+            <p>
+            As for what I enjoy doing when not focusing so intensly on any of that, I am an avid creative writer, and artist. 
+            I do so greatly love reimagining and crafting different realities, people, and situations that all come together to create such entracing, intricate stories. I've been working to complete a story, comic, and play myself, each in different settings and each having my full excitement. 
+            These interests also spill over to my tastes when I game as well. I enjoy role-playing games (RPGs) and historically-inspired games as well, such as Assassin's Creed and some Call of Duty games. 
+            I'd have to say that the AC: Ezio Collection, AC: Origins and Call of Duty: WW2 are my favorites so far regarding those series. My favorite of all time is the Original Mass Effect Trilogy. That is just timeless. 
+            </p>
+            <p>
+            Lastly, I am a quiet personality, but so love working with people to hear the unique perspectives individuals provide. Each person shapes their own reality, always ever slightly different from the next. Such diversity helps in innovation and design, and I welcome such a benefit!
+            </p>
+            </section>
+            <h3 id="course">Academics -</h3>            
+            <section style="color: black;background: aqua;padding:20px;">
+                <img src="/mypics/gatech logo.jpg" width="300" height="300" style="float: right;"/>      
+                <ul>Relevant Courses:</ul>
+                    <li>Intro to Python</li>
+                    <li>Intro to Object-Oriented Programming</li>
+                    <li>Computing, Society, & Professionalism (Ethics)</li>
+                    <li>Data Structures and Algorithms</li>               
+                    <li>Objects and Design</li>
+                    <li>Discrete Mathematics</li>
+            </section>
+            <h3>Skillset -</h3>
+            <section style="color: black;background: aqua;padding:20px;">
+                <li>Python: Beginner</li>
+                <li>JavaScript: Beginner</li>
+                <li>Java: Familiar</li>
+                <li>HTML/CSS: Familiar</li>
+            </section>
+            <h3 id="experience">Relevant Experience -</h3>
+            <section style="color: black;background: aqua;padding:20px;">
+                <p>Participant in Google SPS Program (click image)</p>
+                <a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/"  target="_blank"><img src="/mypics/sps.jpg" alt="SPS Link" style="width:875px;height:200px;"/></a>
+            </section>
+            <h3 id="project">Projects -</h3>
+            <section style="color: black;background: aqua;padding:20px;">
+                <p>(click image and also see github link as well)</p>
+                <a href="https://scratch.mit.edu/projects/286751713/" target="_blank"><img src="/mypics/ddr.png" alt="Scratch DDR Game" style="width:875px;height:200px;"/></a>
+                <a href="mypics/Grunt_Webpage.html" target="_blank"><img src="/mypics/grunt-web.png" alt="Mass Effect Character Site" style="width:875px;height:200px;"/></a>
+                <a href="mypics/MEReaperCountdownTimer.html" target="_blank"><img src="/mypics/MEReaperCD.png" alt="Mass CountDown Clock" style="width:875px;height:200px;"/></a>
+           
+            </section> 
+            <h3 id="resume">Resume -</h3>
+            <section style="color: black;background: aqua;padding:20px;">
+                <p>(click image)</p>
+                <a href="mypics/CharityTarverResumeTTK.pdf"><img src="/mypics/resumettk.png" alt="RESUME Link" style="width:875px;height:200px;"/></a>
+            </section>
+            <h3 id="gallery">Gallery -</h3>
+            <section style="color: black;background: aqua;padding:20px;">
+                <div class="row">
+                    <div class="column">
+                        <img src="/mypics/pose0.png">
+                        <img src="/mypics/change your mind image.jpg">
+                        <img src="/mypics/pose1.png">
+                        <img src="/mypics/pose2.png">
+                        <img src="/mypics/paintball.png">
+                        
+                    </div>
+                    <div class="column">
+                        <img src="/mypics/Antimony.png">
+                        <img src="/mypics/pose3.png">
+                        <img src="/mypics/mass effect squad.jpg" style="width:300px;height:400px;">
+                        <img src="/mypics/pose4.png">
+                        <img src="/mypics/pose5.png">
+                        <img src="/mypics/pose6.png">
+
+                    </div>
+                    <div class="column">
+                        <img src="/mypics/super crunch roll.jpg">
+                        <img src="/mypics/dao peeps.png" style="width:450px;height:400px;">
+                        <img src="/mypics/qunari.jpg" style="width:450px;height:400px;">
+                        <img src="/mypics/reaper bg.jpg" style="width:450px;height:400px;">
+                        <img src="/mypics/daii peeps.jpg" style="width:450px;height:400px;">
+                        <img src="/mypics/dai peeps.jpg" style="width:450px;height:400px;">                      
+                        <img src="/mypics/pose6.png">
+                    </div>                     
+                </div>
+            </section>                       
+        </article>
+    </main> 
+</body>
 </html>
