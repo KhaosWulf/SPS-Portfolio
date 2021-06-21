@@ -27,10 +27,22 @@ function addRandomFact() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+
+/* <---SPS fetch HelloWorldServlet Tutorial--->
 async function showHello() {
   const responseFromServer = await fetch('/hello');
   const textFromResponse = await responseFromServer.text();
 
   const helloContainer = document.getElementById('hello-container');
   helloContainer.innerText = textFromResponse;
+}*/
+
+async function showMusicTaste() {
+    const serverRequest = await fetch("/music");
+    const messageFromServer = await serverRequest.json();
+
+    const musicContainer = document.getElementById("music-container");
+    const musicNum = messageFromServer.length;
+    const random = Math.floor(Math.random()* musicNum);
+    musicContainer.innerText = messageFromServer[random];
 }
