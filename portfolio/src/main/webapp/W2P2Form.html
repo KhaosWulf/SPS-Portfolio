@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="loadTasks()">
     <header>
     <nav class = "nav-header">
         <ul class="nav-links">
@@ -53,11 +53,15 @@
                         Definitely interested in any affordable robotics projects, specifically any walking form robots,
                          but all ideas/recs are welcome! 
                         Trying to get my feet wet in this area. Much appreciated! (You will be redirected to the main page after submission):</p>
-                    <textarea name="text-input" rows="10" cols="100" placeholder="I project I've come across/have done myself..."></textarea>
+                    <textarea name="recommendation" rows="10" cols="100" placeholder="I project I've come across/have done myself..."></textarea>
                     <br/>
-                    <input type="submit" />
+                    <input type="submit"/>
                 </form>            
             </section>
+            <section>
+                <h3 id="form">Previous Recommendations -</h3>
+                <ul id="task-list"></ul>
+            </section>            
         </article>
     </main> 
 </body>
