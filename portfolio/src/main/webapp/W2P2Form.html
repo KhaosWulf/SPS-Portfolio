@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio HQ: Charity CJ Tarver</title>
+    <link rel="icon" 
+        type="image/png" 
+        href="https://media.istockphoto.com/vectors/wolf-icon-vector-id844157592?b=1&k=6&m=844157592&s=612x612&w=0&h=hQF8q7G3X6RC-qjtGolEwwZwdaeCfUfHsl3nlIhqixU="/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+    <nav class = "nav-header">
+        <ul class="nav-links">
+            <li><img src="/mypics/wolf icon.jpg" width="40" 
+               height="40"/></li>
+            <li><a href="index.html#about">ABOUT ME</a></li>
+            <li><a href="index.html#course">RELEVANT COURSES AND SKILLSET</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li><a href="index.html#project">PROJECTS</a></li>
+            <li><a href="index.html#resume">RESUME</a></li>
+            <li><a href="index.html#gallery">GALLERY</a></li>
+            <li><a href="W2P2Form.html">CS/ROBOTICS REC. PROJECTS!</a></li>
+        </ul>
+    </nav>
+    </header>
+    <aside class = "aside">
+        <section>
+            <h2 style="font-size:22px;">Charity CJ "Alistair" Tarver</h2>            
+                <img src="/mypics/alistair.png" width="300" height="300"/>
+                <p class="subtext">GaTech: Computer Scientist Undergraduate</p>
+                        <ul class = "aside-links">
+                            <li><a href="https://www.linkedin.com/in/cjtarver00/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/KhaosWulf" target="_blank">Github</a></li>
+                            <li><a href="mailto:cjtarver00@gmail.com" target="_blank">Email Me</a></li>
+                        </ul>
+                <div id="fact-container"></div>
+                <button class="b1" onclick="addRandomFact();"> More About Me: Extended Cut</button>
+                <button clas="b2" onclick="showMusicTaste();">
+                    Glimpse of Music Taste
+                </button>
+                <h1 id="music-container" style="color: rgb(221, 9, 9);"></h1>
+                <p>Click <a href="/music">here</a>for list of music.</p>        
+        </section>
+    </aside>
+    <main>
+        <article>
+            <section>
+                <h3 id="form">CS/Robotics Project Recommendations -</h3>
+                <form action="/form-handler" method="POST">
+                    <p>Please share any cs/robotics projects you would recommend, esp. for a beginner! 
+                        Definitely interested in any affordable robotics projects, specifically any walking form robots,
+                         but all ideas/recs are welcome! 
+                        Trying to get my feet wet in this area. Much appreciated! (You will be redirected to the main page after submission):</p>
+                    <textarea name="text-input" rows="10" cols="100" placeholder="I project I've come across/have done myself..."></textarea>
+                    <br/>
+                    <input type="submit" />
+                </form>            
+            </section>
+        </article>
+    </main> 
+</body>
+</html>
