@@ -62,7 +62,7 @@ function createTaskElement(task) {
 function deleteTask(task) {
   const params = new URLSearchParams();
   params.append('id', task.id);
-  fetch('/delete-task', {method: 'POST', body: params});
+  fetch('/delete-rec', {method: 'POST', body: params});
 }
 /* <---SPS fetch HelloWorldServlet Tutorial--->
 async function showHello() {
